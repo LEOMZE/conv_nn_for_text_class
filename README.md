@@ -1,23 +1,23 @@
-**[This code belongs to the "Implementing a CNN for Text Classification in Tensorflow" blog post.](http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/)**
 
-It is slightly simplified implementation of Kim's [Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882) paper in Tensorflow.
 
-## Requirements
+Слегка упращенная реализация Кима: [Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882) paper in Tensorflow.
+
+## Что нужно:
 
 - Python 3
 - Tensorflow 0.7
 - Numpy
 
-## Training
+## Обучение
 
-Print parameters:
+Вывод параметров:
 
 ```bash
 ./train.py --help
 ```
 
 ```
-optional arguments:
+опциональные аргументы:
   -h, --help            show this help message and exit
   --embedding_dim EMBEDDING_DIM
                         Dimensionality of character embedding (default: 128)
@@ -47,22 +47,22 @@ optional arguments:
 
 ```
 
-Train:
+ОБучение:
 
 ```bash
 ./train.py
 ```
 
-## Evaluating
+## Оценка
 
 ```bash
 ./eval.py --checkpoint_dir="./runs/1459637919/checkpoints/"
 ```
 
-Replace the checkpoint dir with the output from the training. To use your own data, change the `eval.py` script to load your data.
+Для использования своих данных нужно изменить скрипт eval.py.
 
 
-## References
+## Ссылки
 
 - [Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)
 - [A Sensitivity Analysis of (and Practitioners' Guide to) Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1510.03820)
